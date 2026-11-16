@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>GameZone</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&family=Chakra+Petch:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <section id="home">
+    <header>
+      <p class="kicker">Arkáda v prohlížeči</p>
+      <h1 class="logo">GameZone</h1>
+      <p class="lead">Dvacet miniher na jedno kliknutí. Bez instalace a bez přihlášení. Rekordy se ukládají přímo u tebe v prohlížeči.</p>
+      <div class="hero-actions">
+        <button class="btn primary" id="rand" style="--g:var(--pink)">Náhodná hra</button>
+        <span class="count" id="recs"></span>
+      </div>
+    </header>
+    <div class="grid" id="grid"></div>
+    <p class="note">Hry fungují na počítači i na telefonu. Na klávesnici použij šipky, mezerník nebo čísla 1 až 4, na dotykovém displeji klepej a přejížděj prstem.</p>
+  </section>
+
+  <section id="view" hidden>
+    <div class="gh">
+      <a class="back" href="#">← Všechny hry</a>
+      <h2 id="gt"></h2>
+      <div class="chips">
+        <div class="chip"><span>Skóre</span><b id="sc">0</b></div>
+        <div class="chip"><span>Rekord</span><b id="bs">—</b></div>
+      </div>
+      <button class="btn" id="restart">Znovu</button>
+    </div>
+    <p class="how" id="how"></p>
+    <div class="game" id="game"></div>
+  </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
